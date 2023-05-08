@@ -14,7 +14,7 @@ html:超文本标记语言
 
 `<strong>内容</strong>`
 
-![img](../.assets/202305012302061.png)
+![image-20230508150328654](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150328654.png)
 
 需要加粗的文字
 
@@ -36,7 +36,7 @@ html:超文本标记语言
 
 ### HTML基本骨架
 
-![img](../.assets/202305012331562-16829573917803.png)
+![image-20230508150347066](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150347066.png)
 
 - html:整个网页
 - head：网页头部，用来存放给浏览器看的信息，例如CSS
@@ -56,11 +56,11 @@ vscode快捷键：！(英文状态下的)配合回车键orTab键
 
 - 父子关系（嵌套关系）
 
-  ![image-20230502155855936](../.assets/image-20230502155855936.png)
+  ![image-20230508150407748](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150407748.png)
 
 - 兄弟关系（并列关系）
 
-  ![image-20230502155906078](../.assets/image-20230502155906078.png)
+  ![image-20230508150419690](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150419690.png)
 
 - 代码格式
 
@@ -68,7 +68,7 @@ vscode快捷键：！(英文状态下的)配合回车键orTab键
 
   - 兄弟关系：兄弟标签换行要对齐
 
-    ![image-20230502160401555](../.assets/image-20230502160401555.png)
+    ![image-20230508150435805](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150435805.png)
 
 ### 注释
 
@@ -84,7 +84,9 @@ vscode快捷键：！(英文状态下的)配合回车键orTab键
 
 #### 标签名：
 
-h1-h6（双标签）   ![image-20230502162115810](../.assets/image-20230502162115810.png)
+h1-h6（双标签）   
+
+​        ![image-20230508150506403](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150506403.png)
 
 其显示特点：
 
@@ -118,7 +120,7 @@ p（双标签）
 
 - 换行 `br`（单标签）
 
-  ![image-20230502163334015](../.assets/image-20230502163334015.png)
+  ![image-20230508150528773](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150528773.png)
 
 - 水平线 `hr`（）单标签
 
@@ -126,7 +128,7 @@ p（双标签）
 
 作用：为文本添加特殊格式，以突出重点。常见的文本格式：加粗、倾斜、下划线、删除线等。 
 
-![1680314078647](../.assets/1680314078647.png)
+![image-20230508150546527](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150546527.png)
 
 > 提示：strong、em、ins、del 标签自带强调含义（语义）。 
 
@@ -142,14 +144,14 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 #### 图像属性
 
-![1680314152822](../.assets/1680314152822.png)
+![image-20230508150603457](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150603457.png)
 
 #### 属性语法
 
 * 属性名="属性值"
 * 属性写在尖括号里面，标签名后面，标签名和属性之间用空格隔开，不区分先后顺序
 
-![1680314195951](../.assets/1680314195951.png)
+![image-20230508150619718](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150619718.png)
 
 ### 路径
 
@@ -172,7 +174,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 * **. ** 表示当前文件所在文件夹           → ./
 * **..** 表示当前文件的上一级文件夹 → ../   
 
-![1680314322997](../.assets/1680314322997.png)
+![image-20230508150635150](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150635150.png)
 
 #### 绝对路径
 
@@ -220,7 +222,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 常用属性
 
-![1680314629860](../.assets/1680314629860.png)
+![image-20230508150705362](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150705362.png)
 
 > 拓展：书写 HTML5 属性时，如果属性名和属性值相同，可以简写为一个单词。 
 
@@ -237,7 +239,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 常用属性
 
-![1680314703735](../.assets/1680314703735.png)
+![image-20230508150719007](https://gitee.com/liuhb-clanguage/picture/raw/master/png/image-20230508150719007.png)
 
 ```html
 <!-- 在浏览器中，想要自动播放，必须有 muted 属性 -->
