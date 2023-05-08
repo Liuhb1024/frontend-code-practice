@@ -243,3 +243,4 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 <!-- 在浏览器中，想要自动播放，必须有 muted 属性 -->
 <video src="./media/vue.mp4" controls loop muted autoplay></video>
 ```
+
