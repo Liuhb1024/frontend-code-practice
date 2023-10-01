@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // a=1
+    // console.log(typeof(a))
+    // b='b'
+    // a=b
+    // console.log(typeof(a))
+    // let a = 10
+    // console.log(typeof(a))
+    // a = a / 3
+    // console.log(a)
+    // console.log(typeof(a))
+    // console.log(10 / 0)
+    // let a = 10
+    // let b  = "10"
+    // alert(a === b)
+    // // 用户输入一个整数, 提示今天是星期几
+    // var day = prompt("请输入今天星期几：>")
+    // switch (parseInt(day)) {
+    //     case 1:
+    //         console.log("星期一");
+    //         break;
+    //     case 2:
+    //         console.log("星期二");
+    //         break;
+    //     case 3:
+    //         console.log("星期三");
+    //         break;
+    //     case 4:
+    //         console.log("星期四");
+    //         break;
+    //     case 5:
+    //         console.log("星期五");
+    //         break;
+    //     case 6:
+    //         console.log("星期六");
+    //         break;
+    //     case 7:
+    //         console.log("星期日");
+    //         break;
+    //     default:
+    //         console.log("输入有误");
+    // }
+    // var arr = ['小猪佩奇', '小猪乔治', '小羊苏西'];
+    // console.log(arr);
+    // console.log(arr[0]);
+    // console.log(arr[1]);
+    // console.log(arr[2]);
+    // arr[2] = '小猫凯迪';
+    // console.log(arr);
+    // var arr = [9, 5, 2, 7];
+    // arr.length = 6;
+    // console.log(arr);
+    // console.log(arr[4], arr[5]);
+    // var arr = [];
+    // arr[2] = 10;
+    // console.log(arr)
+    // var arr = [9, 5, 2, 7, 3, 6, 8];
+    // var newArr = [];
+    // for (var i = 0; i < arr.length; i++) {
+    //     if (arr[i] % 2 != 0) {
+    //         newArr.push(arr[i]);
+    //     }
+    // }
+    // console.log(newArr);
+    // var arr = [9, 5, 2, 7];
+    // // 第一个参数表示从下表为 2 的位置开始删除. 第二个参数表示要删除的元素个数是 1 个
+    // arr.splice(2, 1);
+    // console.log(arr);
+    // function hello() {
+    //     console.log("hello")
+    // }
+    // function helloSb(num, name) {
+    //     console.log(num + "hello" + name)
+    //     return 1
+    // }
+    // // hello()
+    // let a = helloSb(1, "sb")
+    // console.log(typeof(a))
+    // var a = {};  // 创建了一个空的对象
+    // var student = {
+    //     name: '蔡徐坤',
+    //     height: 175,
+    //     weight: 170,
+    //     sayHello: function () {
+    //         console.log("hello");
+    //     }
+    // };
+    // console.log(student.name)
+    // var student = new Object(); // 和创建数组类似
+    // student.name = "蔡徐坤";
+    // student.height = 175;
+    // student['weight'] = 170;
+    // student.sayHello = function () {
+    //     console.log("hello");
+    // }
+    // console.log(student.name);
+    // console.log(student['weight']);
+    // student.sayHello();\
+    // function Prople(name,height,weight){
+    //     this.name= name
+    //     this.height = height
+    //     this.weight  =weight
+    //     this.Say = function(){
+    //         console.log(name + "fuck you")
+    //     }
+    // }
+    // let ikun = new Prople("ikun", 1, 1)
+    // let cxk = new Prople("cxk", 2, 2)
+    // let xhz = new Prople("xhz", 3, 3)
+    // console.log(ikun)
+    // ikun.Say()
+    // console.log(cxk)
+    // cxk.Say()
+    class People {
+        constructor(name, height, weight) {
+            this.name = name
+            this.height = height
+            this.weight = weight
+        }
+
+        Say() {
+            console.log(this.name + "唱跳rap篮球")
+        }
+        static other = "other"
+        static Sum() {
+            return 100;
+        }
+    }
+
+    let ikun = new People("ikun", 175, 75)
+    console.log(ikun)
+    ikun.Say()
+
+    alert(People.other)
+    alert(People.Sum())
+
+    class Student extends People {
+        constructor(name, height, weight, number) {
+            super(name, height, weight)
+            this.number = number
+        }
+        Say() {
+            alert(this.name)
+        }
+    }
+
+    let student = new Student("cxk", 188, 70, 22202012)
+    console.log(student)
+    student.Say()
+
+
+</script>
+
+</html>
