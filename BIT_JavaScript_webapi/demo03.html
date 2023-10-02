@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeyup="myOnkeyup()" id="">
+</body>
+<script>
+    //事件源
+    let input = document.querySelector('input')
+    input.onkeydown = function(event){
+        // console.log("键盘正在按下")
+        // let a = event.keyCode;
+        // // console.log(a)
+        // let b = String.fromCharCode(a)
+        // console.log(b) 
+        //如果按键按下的是shift键，此时弹窗提示shift键被按下
+        if(event.shiftKey){
+            alert("shift被按下")
+        }
+    }
+
+    function myOnkeyup(){
+        console.log("按键被抬起")
+    }
+</script>
+</html>

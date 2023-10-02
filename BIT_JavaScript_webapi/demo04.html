@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeyup="myOnkeyup()" name="" id="">
+    <span>这是一个span标签</span>
+    <img src="./17.jpg" alt="图片加载失败" title="这是一个美女图片" width="100px" height="100px">
+</body>
+<script>
+     let input = document.querySelector('input')
+     input.onkeydown = function(event){
+        if(event.shiftKey){
+            alert("shift被按下")
+        }
+        if(event.altKey){
+            alert(alt被按下)
+        }
+     }
+     function myOnkeyup(){
+        console.log("按键被抬起")
+     }
+     //获取元素内容
+     let span  =document.querySelector('span')
+     console.log(span.innerHTML)
+     //修改
+     span.innerHTML = "修改你的元素内容"
+     //修改页面结构
+     span.innerHTML = "<h3>这是h3标签</h3>"
+
+     let img = document.querySelector('img')
+     console.dir(img)
+     img.title = "这是修改好的title"
+     img.onclick = function(){
+        alert("你已经点击了这个美女")
+     }
+
+</script>
+</html>
