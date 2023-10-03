@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .false{
+            color: red;
+        }
+        .true{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input class="reset_button" type="button" value="重新开始一局游戏" onclick="reSet()" name="" id="">
+    <br>
+    请输入要猜的数字：<input class="to_guess_num" type="text" value="0" name="" id=""><input type="button" value="猜" name=""
+        id="" onclick="Guess()">
+    <br>
+    已经猜的次数：<span class="has_guess_num">0</span>
+    <br>
+    结果：<span class="result"></span>
+    <br>
+</body>
+<script>
+    //输入的数字
+    let to_guess_num_element = document.querySelector('.to_guess_num')
+    console.dir(to_guess_num_element)
+    //已经猜的次数
+    let input_num_element = document.querySelector('.has_guess_num')
+    console.dir(input_num_element)
+    //猜测的结果
+    let result_element = document.querySelector('.result')
+    console.dir(result_element)
+    function reSet() {
+        to_guess_num_element.value = 0
+        input_num_element.innerHTML = 0
+        result_element.innerHTML = ""
+    }
+    let num = Math.floor(Math.random() * 100) + 1
+    console.log(num)
+    function Guess() {
+        input_num_element.innerHTML = parseInt(input_num_element.innerHTML) + 1
+        if (num < parseInt(to_guess_num_element.value)) {
+            result_element.innerHTML = "猜大了"
+            result_element.className = 'false'
+        }else if(num > parseInt(to_guess_num_element.value)){
+            result_element.innerHTML = "猜小了"
+            result_element.className = 'false'
+
+        }else{
+            result_element.innerHTML = "恭喜你！猜中了"
+            result_element.className = 'true'
+
+        }
+    }
+</script>
+
+</html>
