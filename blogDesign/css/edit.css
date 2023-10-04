@@ -1,0 +1,41 @@
+.edit_blog_container {
+    height: calc(100%-50px);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+input {
+    width: 1000px;
+    height: 60px;
+    margin-top: 8px;
+    border-radius: 9px;
+    border: none;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 9px;
+    margin-top: 8px;
+    background-color: rgba(116, 105, 101, 0.8);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+button:active {
+    background-color: rgb(56, 49, 49);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#editor {
+    margin-top: 10px;
+    border-radius: 9px;
+    opacity: 70%;
+}
